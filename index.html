@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Cezara - Hojda</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="left-side">
+        <div>
+            <textarea name="before-encryption" id="before-encryption"></textarea>
+        </div>
+
+        <div id="button-box">
+            <button onclick="encrypt(getStep())">ZASZYFRUJ</button>
+            <button onclick="encrypt(-getStep())">ODSZYFRUJ</button>
+        </div>
+
+        <div>
+            <textarea name="after-encryption" id="after-encryption" disabled></textarea>
+        </div>
+    </div>
+    <div id="right-side">
+        <h1>USTAWIENIA</h1>
+        <div>
+            <label for="step-setting">Przeskok:</label>
+            <input type="number" name="step-setting" id="step-setting" min="1" max="31" value="3">
+        </div>
+    </div>
+</body>
+
+</html>
