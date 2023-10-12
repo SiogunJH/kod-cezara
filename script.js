@@ -5,7 +5,7 @@ function encrypt(step) {
         return
     }
 
-
+    // get string to encrypt
     let toEncrypt = document.getElementById("before-encryption").value.toLowerCase().split('')
 
     for (let i = 0; i < toEncrypt.length;) {
@@ -25,6 +25,8 @@ function encrypt(step) {
         // goto next char
         i++
     }
+
+    // send out encrypted string
     document.getElementById("after-encryption").value = toEncrypt.join('')
 }
 
