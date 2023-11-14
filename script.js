@@ -34,4 +34,4 @@ function getStep() {
     return parseInt(document.getElementById("step-setting").value)
 }
 
-const alphabet = "aąbcćdeęfghijklmnoópqrsśtuwvxyzźż";
+const alphabet = "aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż";
